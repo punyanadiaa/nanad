@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-On! Fan Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6eaee;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4c8ca9;
+            padding: 20px;
+            color: white;
+        }
+
+        nav {
+            background-color: #0e99ea;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #c3c9d1;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .character {
+            display: inline-block;
+            width: 20%;
+            margin: 10px;
+        }
+
+        .character img {
+            width: 100px;
+            height: 200px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .back-to-top {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: #5ea5f2;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 20px;
+            display: none;
+        }
+
+        .social-media {
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            margin: 10px;
+            font-size: 20px;
+            color: #ded4d9;
+            text-decoration: none;
+        }
+
+        .comment-section {
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .comment-section input, .comment-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .comment-section button {
+            background-color: #458ebe;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>K-On</h1>
+    <p>Celebrate the music, friendship, and fun of K-On!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#characters">Characters</a>
+    <a href="#episodes">Episodes</a>
+    <a href="#music">Music</a>
+    <a href="#comments">Comments</a>
+</nav>
+
+<div class="content" id="home">
+    <h2>About K-On!</h2>
+    <p>Yui, Mio, Ritsu, Tsumugi, and Azusa as they form a light music club and create unforgettable memories!</p>
+</div>
+
+<div class="content" id="characters">
+    <h2>Meet the Characters</h2>
+    <div class="character">
+        <img src="Yui_Hirasawa_new_mugshot.webp" alt="Yui Hirasawa">
+        <p><strong>Yui Hirasawa</strong></p>
+        <p>The energetic and spontaneous lead guitarist of the band!</p>
+    </div>
+    <div class="character">
+        <img src="Mio_Akiyama_new_mugshot.webp" alt="Mio Akiyama">
+        <p><strong>Mio Akiyama</strong></p>
+        <p>The shy, talented bassist with a love for cute things!</p>
+    </div>
+    <div class="character">
+        <img src="Ritsu_Tainaka_new_mugshot.webp" alt="Ritsu Tainaka">
+        <p><strong>Ritsu Tainaka</strong></p>
+        <p>The fun-loving and wild drummer of the band!</p>
+    </div>
+    <div class="character">
+        <img src="Tsumugi_Kotobuki_new_mughot.webp" alt="Tsumugi Kotobuki">
+        <p><strong>Tsumugi Kotobuki</strong></p>
+        <p>The rich and elegant keyboardist with a gentle heart!</p>
+    </div>
+    <div class="character">
+        <img src="Azusa_Nakano_new_mugshot.webp" alt="Azusa Nakano">
+        <p><strong>Azusa Nakano</strong></p>
+        <p>The hardworking and serious guitarist who joins later in the series!</p>
+    </div>
+</div>
+
+<div class="content" id="episodes">
+    <h2>Episodes</h2>
+    <p>Watch the full episodes of K-On! on various streaming platforms like Netflix and HIDIVE.</p>
+</div>
+
+<div class="content" id="music">
+    <h2>Music</h2>
+    <p>Enjoy the wonderful music from the show, including the iconic songs "Don't Say Lazy" and "Fuwa Fuwa Time!"</p>
+</div>
+
+<div class="comment-section" id="comments">
+    <h2>Leave a Comment</h2>
+    <form action="#" method="post">
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+        <textarea id="comment" name="comment" rows="4" placeholder="Your Comment" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<div class="social-media">
+    <h3>Follow Us on Social Media</h3>
+    <a href="https://www.instagram.com/_nadgstna" target="_blank">
+    </div>
+
+<div class="back-to-top" onclick="scrollToTop()">Back to Top</div>
+
+<footer>
+    <p>&copy; 2024 K-On! Fan Website | Created with love</p>
+</footer>
+
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
